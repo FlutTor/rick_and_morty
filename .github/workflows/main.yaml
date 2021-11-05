@@ -21,7 +21,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: rick-and-morty-main-apk
-          path: build/app/outputs/apk/profile/app-profile.apk
+          path: build/app/outputs/flutter-apk/app-development-profile.apk 
       #- name: Format
       #  run: flutter format --set-exit-if-changed lib test
 
