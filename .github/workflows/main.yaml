@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies
         run: flutter packages get
 
-      - run: flutter build apk --release
+      - run: flutter build apk --release --flavor development --target lib/main_development.dart
 
       - uses: actions/upload-artifact@v1
         with:
