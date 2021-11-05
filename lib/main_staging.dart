@@ -8,14 +8,10 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-
 import 'package:rick_and_morty/app/app.dart';
-import 'package:rick_and_morty/app/app_bloc_observer.dart';
 
 void main() {
-  Bloc.observer = AppBlocObserver();
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
