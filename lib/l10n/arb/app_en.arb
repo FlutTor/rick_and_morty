@@ -3,5 +3,10 @@
     "counterAppBarTitle": "Counter",
     "@counterAppBarTitle": {
         "description": "Text shown in the AppBar of the Counter Page"
+    },
+
+    "homeAppBarTitle": "Rick and Morty",
+    "@homeAppBarTitle": {
+        "description": "Text shown in the AppBar of the Home Page"
     }
 }
