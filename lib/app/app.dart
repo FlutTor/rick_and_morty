@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:rick_and_morty/const/theme.dart';
+import 'package:rick_and_morty/features/home/home.dart';
 import 'package:rick_and_morty/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -23,9 +24,7 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: Container(
-        color: Colors.red,
-      ),
+      home: const HomePage(),
     );
   }
 }
