@@ -16,12 +16,12 @@ jobs:
       - name: Install Dependencies
         run: flutter packages get
 
-      - run: flutter build apk --release --flavor development --target lib/main_development.dart
+      - run: flutter build apk --profile --flavor development --target lib/main_development.dart
 
       - uses: actions/upload-artifact@v1
         with:
           name: rick-and-morty-main-apk
-          path: build/app/outputs/apk/release/app-release.apk
+          path: build/app/outputs/apk/profile/app-profile.apk
       #- name: Format
       #  run: flutter format --set-exit-if-changed lib test
 
