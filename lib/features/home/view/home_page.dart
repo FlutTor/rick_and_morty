@@ -43,11 +43,11 @@ class HomePage extends StatelessWidget {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Image.network(
-                                    snapshot.data![index].image!,
+                                    snapshot.data![index].image,
                                     height: 80,
                                   ),
                                   const SizedBox(height: 8),
-                                  Text(snapshot.data![index].name!),
+                                  Text(snapshot.data![index].name),
                                   Row(
                                     mainAxisSize: MainAxisSize.min,
                                     textBaseline: TextBaseline.alphabetic,
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                                       SizedBox(
                                         width: 100,
                                         child: Text(
-                                          snapshot.data![index].species!,
+                                          snapshot.data![index].species,
                                           overflow: TextOverflow.ellipsis,
                                         ),
                                       )
@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
                                         ),
                                       ),
                                       const SizedBox(width: 8),
-                                      Text(snapshot.data![index].gender!),
+                                      Text(snapshot.data![index].gender),
                                     ],
                                   ),
                                   Row(
@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
                                         ),
                                       ),
                                       const SizedBox(width: 8),
-                                      Text(snapshot.data![index].status!),
+                                      Text(snapshot.data![index].status),
                                     ],
                                   ),
                                 ],
