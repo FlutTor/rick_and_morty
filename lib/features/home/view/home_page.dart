@@ -34,9 +34,8 @@ class HomePage extends StatelessWidget {
                         itemCount: snapshot.data!.length,
                         itemBuilder: (context, index) {
                           return SizedBox(
-                            width: 215,
+                            width: 180,
                             child: Card(
-                              margin: const EdgeInsets.all(8),
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
@@ -44,7 +43,7 @@ class HomePage extends StatelessWidget {
                                 children: [
                                   Image.network(
                                     snapshot.data![index].image,
-                                    height: 80,
+                                    height: 60,
                                   ),
                                   const SizedBox(height: 8),
                                   Text(snapshot.data![index].name),
@@ -64,7 +63,7 @@ class HomePage extends StatelessWidget {
                                       ),
                                       const SizedBox(width: 8),
                                       SizedBox(
-                                        width: 100,
+                                        width: 60,
                                         child: Text(
                                           snapshot.data![index].species,
                                           overflow: TextOverflow.ellipsis,
